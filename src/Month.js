@@ -183,6 +183,7 @@ export default class Month extends Component {
             const dateWithoutOffset = new Date(
               week[0].getTime() - week[0].getTimezoneOffset() * 60000
             );
+console.log('using date without offset', dateWithoutOffset.getTime());
             return (
               <div
                 key={dateWithoutOffset.getTime()}
